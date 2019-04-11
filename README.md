@@ -5,10 +5,10 @@ En este repositorio se encuentra disponibles  los archivos con el código y la r
 
 ## Equipo de trabajo
 Los integrantes del equipo son:
--  Camila Mejía
--  Sara Mira
--  Juan Jurado
--  Alirio Rodriguez
+-  Camila Mejía Quintero
+-  Sara Mira Puerta
+-  Juan David Jurado Tapias
+-  Alirio Rodriguez Mesías
 
 ## Estructura de Directorios
 - En la subcarpeta papers-txt del directorio datasets se encuentran los 981 archivos en formato txt que se deben procesar.
