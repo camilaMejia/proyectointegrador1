@@ -1,16 +1,20 @@
 # Proyecto Integrador sobre Procesamiento de Texto
 
-## Introducción
+## I. Descripción
+###Introducción
 En este repositorio se encuentra disponibles  los archivos con el código y la respectiva documentación que corresponde al Proyecto Integrador de la Maestría en Analítica y Ciencia de Datos de la cohorte 2019-1 en la  Universidad EAFIT.
 
-## Equipo de trabajo
+### Equipo de trabajo
 Los integrantes del equipo son:
 -  Camila Mejía Quintero
 -  Sara Mira Puerta
 -  Juan David Jurado Tapias
 -  Alirio Rodriguez Mesías
 
-## Estructura de Directorios
+## II. Arquitectura del Código
+
+## III. Guía de Uso
+#### Estructura de Directorios
 - En la subcarpeta papers-txt del directorio datasets se encuentran los 981 archivos en formato txt que se deben procesar.
 - En la subcarpeta salida del directorio datasets se encuentran los 981 archivos en formato txt que se obtienen después de realizar la fase de pre-procesamiento.
 - En el directorio raíz están los archivos en formato Jupyter Notebook con las diferentes rutinas para hacer las siguientes operaciones:
