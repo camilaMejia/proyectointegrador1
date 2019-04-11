@@ -14,7 +14,7 @@ Los integrantes del equipo son:
 - En la subcarpeta papers-txt del directorio datasets se encuentran los 981 archivos en formato txt que se deben procesar.
 - En la subcarpeta salida del directorio datasets se encuentran los 981 archivos en formato txt que se obtienen después de realizar la fase de pre-procesamiento.
 - En el directorio raíz están los archivos en formato Jupyter Notebook con las diferentes rutinas para hacer las siguientes operaciones:
-  * Archivo preprocessing_data.ipynb, tiene las rutinas del pre-procesamiento de los archivos de texto, se realizan las siguientes acciones: <br>
+  * Archivo preprocessing_data.ipynb, tiene las rutinas del <b>Pre-procesamiento</b> de los archivos de texto, se realizan las siguientes acciones: <br>
     a. Eliminar URL o email.<br>
     b. Eliminar cualquier contenido entre paréntesis o corchetes<br>
     c. Eliminar abreviaciones("et al.", "i.i.e.","i.e"), apóstrofes y guiónes<br>
