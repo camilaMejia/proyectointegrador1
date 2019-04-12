@@ -61,8 +61,14 @@ El objetivo es generar el bag of words de todo el dataset generado en la secció
     e. Eliminar palabras o números de un caracter de longitud 1<br>
   Como resultado de este procesamiento se logra en promedio (para los 981 archivos) eliminar aproximadamente el 19% de las palabras en los archivos iniciales.
   * Archivo processing_data.ipynb, tiene las rutinas del <b>Procesamiento</b> de los archivos de texto, se realizan las siguientes acciones:<br>
-    a. <b> Falta completar por parte de Camila </b><br>
-    b. <b> Falta completar por parte de Camila </b><br>
-    c. <b> Falta completar por parte de Camila </b><br>
-    d. <b> Falta completar por parte de Camila </b><br>
-    e. Eliminar palabras o números de un caracter de longitud 1<br>
+    a. Se verifica el idioma del artículo<br>
+    b. Se pasa todo el contenido a minúscula<br>
+    c. Se hace la tokenización, partiendo el texto por espacio y fin de línea<br>
+    d. Eliminar palabras o números de un caracter de longitud uno<br>
+    e. Se eliminan las pálabras gramaticales como artículos, conjunciones y preposiciones<br>
+    f. Se lleva a cabo el proceso de stemming<br>
+    g. Se hace el proceo de lematización<br>
+    h. Se saca el vocabulario de cada documente y se incluye en el global<br>
+    i. Se guarda la frecuencia de las 50 palabras más mencionadas en cada artículo<br>
+    j. Finalmente, se construye un modelo con todo el vocabulario global y se construye la bolsa de palabras con la frecuencia de las         palabras<br>
+    
