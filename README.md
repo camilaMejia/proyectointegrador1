@@ -23,11 +23,11 @@ Para el primer seguimiento se cubrirá las siguientes fases:
 
 ## II. Arquitectura del Código
 
-El código para la preparación de los datos se divide en dos secciones principales. La primera sección es el Pre-procesamiento de los datos, y la segúnda sección es el procesamiento de los datos donde se usan las técnicas básicas de preparación de los datos. 
+El código para la preparación de los datos se divide en dos secciones principales. La primera sección es el Pre-procesamiento de los datos, y la segúnda sección es el procesamiento de los datos, en esta se usan las técnicas básicas de preparación de los datos. 
 
 ### Sección 1: Pre-procesamiento
 
-El objetivo es eliminar la mayor cantidad de información obsoleta que contiene cada dato de texto y generar datos de texto de menor dimensión. 
+El objetivo es eliminar la mayor cantidad de información obsoleta que contiene cada dato de texto, y generar datos de texto de menor dimensión. La sección contiene los siguientes ordenados:
 
 1. Importación de las librerías necesarias: numpy, re, os y collections. 
 2. Llamado de los datos input (datasetIn) y se genera una carpeta de outputs "salida" para guardar los datos de texto de menor dimensión (datasetout).
@@ -38,7 +38,7 @@ El objetivo es eliminar la mayor cantidad de información obsoleta que contiene 
 
 ### Sección 2: Procesamiento
 
-El objetivo es generar el bag of words de todo el dataset inicial. 
+El objetivo es generar el bag of words de todo el dataset generado en la sección anterior. La sección contiene los siguientes ordenados:
 
 1. Carga de las librerías necesarias para el procesamiento de datos: ntkl, pandas, sklearn, CountVectorizer , pickle. 
 2. Formación de las reglas para aplicar la tokenización y eliminación de stopwords, entre otros elementos identificados. 
