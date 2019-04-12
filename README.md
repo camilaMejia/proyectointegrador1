@@ -23,6 +23,7 @@ Para el primer seguimiento se cubrirá las siguientes fases:
 
 ## II. Arquitectura del Código
 
+<b> Falta completar por parte de Sara</b>
 
 ## III. Guía de Uso
 #### Estructura de Directorios
@@ -36,4 +37,9 @@ Para el primer seguimiento se cubrirá las siguientes fases:
     d Eliminar los caracteres que NO sean letras o vocales acentuadas<br>
     e. Eliminar palabras o números de un caracter de longitud 1<br>
   Como resultado de este procesamiento se logra en promedio (para los 981 archivos) eliminar aproximadamente el 19% de las palabras en los archivos iniciales.
-  * Archivo CleaningData_camila.ipynb, tiene las rutinas del <b>Procesamiento</b> de los archivos de texto, se realizan las siguientes acciones:
+  * Archivo processing_data.ipynb, tiene las rutinas del <b>Procesamiento</b> de los archivos de texto, se realizan las siguientes acciones:
+    a. <b> Falta completar por parte de Camila </b><br>
+    b. <b> Falta completar por parte de Camila </b><br>
+    c. <b> Falta completar por parte de Camila </b><br>
+    d. <b> Falta completar por parte de Camila </b><br>
+    e. Eliminar palabras o números de un caracter de longitud 1<br>
