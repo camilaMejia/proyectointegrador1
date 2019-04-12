@@ -23,7 +23,30 @@ Para el primer seguimiento se cubrirá las siguientes fases:
 
 ## II. Arquitectura del Código
 
-<b> Falta completar por parte de Sara</b>
+El código para la preparación de los datos se divide en dos secciones principales. La primera sección es el Pre-procesamiento de los datos, y la segúnda sección es el procesamiento de los datos donde se usan las técnicas básicas de preparación de los datos. 
+
+### Sección 1: Pre-procesamiento
+
+El objetivo es eliminar la mayor cantidad de información obsoleta que contiene cada dato de texto y generar datos de texto de menor dimensión. 
+
+1. Importación de las librerías necesarias: numpy, re, os y collections. 
+2. Llamado de los datos input (datasetIn) y se genera una carpeta de outputs "salida" para guardar los datos de texto de menor dimensión (datasetout).
+3. Eliminación de la imformación obsoleta. Por ejemplo: textos en paréntesis, números, direcciones de páginas web y correos electronicos y las secciónes de bibliografía de los artículos.
+4. Reconstrucción de los datos en formato .txt para su posterior tratamiento en procesamiento. 
+5. Guardado de los nuevos datos en la carpeta de salida.
+6. Reducción de la información se puede verificar en el archivo .xls generado. 
+
+### Sección 2: Procesamiento
+
+El objetivo es generar el bag of words de todo el dataset inicial. 
+
+1. Carga de las librerías necesarias para el procesamiento de datos: ntkl, pandas, sklearn, CountVectorizer , pickle. 
+2. Formación de las reglas para aplicar la tokenización y eliminación de stopwords, entre otros elementos identificados. 
+3. Formación de las reglas para aplicar las tecnicas de stemming y lemmatización. 
+4. Lectura de los datos .txt guardados en la carpeta de salida, generada en el pre.procesamiento, se seleccionan los archivos en inglés (existe un documento en alemán). 
+5. Implementación de las técnicas de tokenización, stemming y lemmatización a los artículos en inglés, 
+6. Construcción del vocabulario.
+7. Construcción de Bag of Words.
 
 ## III. Guía de Uso
 #### Estructura de Directorios
