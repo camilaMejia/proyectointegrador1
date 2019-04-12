@@ -1,9 +1,5 @@
 # Proyecto Integrador sobre Procesamiento de Texto
 
-## I. Descripción
-###Introducción
-En este repositorio se encuentra disponibles  los archivos con el código y la respectiva documentación que corresponde al Proyecto Integrador de la Maestría en Analítica y Ciencia de Datos de la cohorte 2019-1 en la  Universidad EAFIT.
-
 ### Equipo de trabajo
 Los integrantes del equipo son:
 -  Camila Mejía Quintero
@@ -11,7 +7,22 @@ Los integrantes del equipo son:
 -  Juan David Jurado Tapias
 -  Alirio Rodriguez Mesías
 
+## I. Descripción
+### Introducción
+En este repositorio se encuentra disponibles los archivos con el código y la respectiva documentación que corresponde al Proyecto Integrador de la Maestría en Analítica y Ciencia de Datos de la cohorte 2019-1 en la  Universidad EAFIT.
+
+### Descripción del Problema
+A partir de un conjunto muy grande (Big data) de documentos tipo texto (Para este proyecto se cuenta con 981 archivos) y los metadatos sobre dichos documentos, realizar un sistema/aplicación para la ingesta, almacenamiento, indexación, búsqueda, recuperación, navegación y visualización de documentos. 
+
+### Descripción de la Solución
+Para el primer seguimiento se cubrirá las siguientes fases:
+ * Pre-procesamiento: Limpieza de los archivos y generación de métricas.
+ * Procesamiento:   <b> Falta completar por parte de Camila </b>
+ * Almacenamiento:  <b> Falta completar por parte de Camila </b>
+
+
 ## II. Arquitectura del Código
+
 
 ## III. Guía de Uso
 #### Estructura de Directorios
