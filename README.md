@@ -15,30 +15,24 @@ En este repositorio se encuentra disponibles los archivos con el código y la re
 A partir de un conjunto muy grande (Big data) de documentos tipo texto (Para este proyecto se cuenta con 980 archivos, habiendo quitando un documento escrito en aleman) y los metadatos sobre dichos documentos, realizar un sistema/aplicación para la ingesta, almacenamiento, indexación, búsqueda, recuperación, navegación y visualización de documentos. 
 
 ### Descripción de la Solución
-Para el primer seguimiento se cubrirá las siguientes fases:
- * Pre-procesamiento: Limpieza de los archivos y generación de métricas.
- * Procesamiento:   <b> Falta completar por parte de Camila </b>
- * Almacenamiento:  <b> Falta completar por parte de Camila </b>
-
-
-## II. Arquitectura del Código
-
-El código para la preparación de los datos se divide en dos secciones principales. La primera sección es el Pre-procesamiento de los datos, y la segúnda sección es el procesamiento de los datos, en esta se usan las técnicas básicas de preparación de los datos. 
+Para implementar la solución se establecieron dos fases:
 
 ### Sección 1: Pre-procesamiento
 
-El objetivo es eliminar la mayor cantidad de información obsoleta que contiene cada dato de texto, y generar datos de texto de menor dimensión. La sección contiene los siguientes ordenados:
+El objetivo es eliminar de cada archivo de texto la mayor cantidad de información que no agrega valor, depurando los datos que se preservan para la siguiente fase. La sección contiene los siguientes ordenados:
 
 1. Importación de las librerías necesarias: numpy, re, os y collections. 
 2. Llamado de los datos input (datasetIn) y se genera una carpeta de outputs "salida" para guardar los datos de texto de menor dimensión (datasetout).
-3. Eliminación de la imformación obsoleta. Por ejemplo: textos en paréntesis, números, direcciones de páginas web y correos electronicos y las secciónes de bibliografía de los artículos.
+3. Eliminación de la imformación innecesaria. Por ejemplo: textos en paréntesis, números, direcciones de páginas web y correos electronicos y las secciónes de bibliografía de los artículos.
 4. Reconstrucción de los datos en formato .txt para su posterior tratamiento en procesamiento. 
 5. Guardado de los nuevos datos en la carpeta de salida.
 6. Reducción de la información se puede verificar en el archivo .xls generado. 
 
+Para cada archivo de texto, se  estableció el número de palabras antes y después del pre-procesamiento, y se estableció el porcentaje de depuración de palabras, lo que permitió generar un indicador del porcentaje de limpieza de la fase de preprocesamiento, que en promedio es del 19%.
+
 ### Sección 2: Procesamiento
 
-El objetivo es generar el bag of words de todo el dataset generado en la sección anterior. La sección contiene los siguientes ordenados:
+El objetivo es eliminar de cada archivo de texto la mayor cantidad de información que no agrega valor, depurando los datos que se preservan para la siguiente fase.   Para esto se implementaron las siguientes reglas de limpieza:
 
 1. Carga de las librerías necesarias para el procesamiento de datos: ntkl, pandas, sklearn, CountVectorizer , pickle. 
 2. Formación de las reglas para aplicar la tokenización y eliminación de stopwords, entre otros elementos identificados. 
