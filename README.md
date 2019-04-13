@@ -17,7 +17,7 @@ A partir de un conjunto muy grande (Big data) de documentos tipo texto (Para est
 ### Descripción de la Solución
 Para implementar la solución se establecieron dos fases:
 
-### Sección 1: Pre-procesamiento
+### Fase 1: Pre-procesamiento
 
 El objetivo es eliminar de cada archivo de texto la mayor cantidad de información que no agrega valor, depurando los datos que se preservan para la siguiente fase. La sección contiene los siguientes ordenados:
 
@@ -30,7 +30,7 @@ El objetivo es eliminar de cada archivo de texto la mayor cantidad de informaci�
 
 Para cada archivo de texto, se  estableció el número de palabras antes y después del pre-procesamiento, y se estableció el porcentaje de depuración de palabras, lo que permitió generar un indicador del porcentaje de limpieza de la fase de preprocesamiento, que en promedio es del 19%.
 
-### Sección 2: Procesamiento
+### Fase 2: Procesamiento
 
 El objetivo es eliminar de cada archivo de texto la mayor cantidad de información que no agrega valor, depurando los datos que se preservan para la siguiente fase.   Para esto se implementaron las siguientes reglas de limpieza:
 
