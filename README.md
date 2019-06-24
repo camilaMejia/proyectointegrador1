@@ -49,13 +49,22 @@ El objetivo es eliminar de cada archivo de texto la mayor cantidad de informaci�
 4. Lectura de los datos .txt guardados en la carpeta de salida, generada en el pre.procesamiento, se seleccionan los archivos en inglés (existe un documento en alemán). 
 5. Implementación de las técnicas de tokenización, stemming y lemmatización a los artículos en inglés, 
 6. Construcción del vocabulario.
-7. Construcción de Bag of Words.
+7. Construcción de la bolsa de palabras (Bag of Words - BoW).
 
 # 2. Segunda Entrega
 ## 2.1 Descripción de la Solución
-Dado que la entrega anterior se quedo con el reto de reducir el Bag of Word, se implementaron algunos ajustes a la fase de pre-procesamiento
+Dado que la entrega anterior se quedo con el reto de reducir el BoW, se implementaron algunos ajustes a la fase de pre-procesamiento
 
 ### 2.1 Fase 1: Pre-procesamiento
 *Archivo: simple_conversion_pdf_tika.py*
-Para evitar la presencia de palabras con caracteres en blanco que las dividen, se realizó una conversión de los artículos en formato PDF a formato txt  utilizando una libería "Tika <a href="https://tika.apache.org/"></a>" 
+Para evitar la presencia de caracteres en blanco en medio de palabras, se realizó una conversión de los artículos en formato PDF a formato txt utilizando una libería "Tika (https://tika.apache.org/)", logrando una evitar la pérdida de información.
 
+*Archivo: cleaning_txt.py*
+Con los archivos en formato TXT (resultado de la conversión con Tika) se aplica las siguientes reglas:
+     a. Eliminar el texto de las referencias bibliográficas, dado que no agrega información en la construcción del BoW.
+     b. Eliminar URL o email.<br>
+     c. Eliminar cualquier contenido entre paréntesis o corchetes<br>
+     d. Eliminar abreviaciones("et al.", "i.i.e.","i.e"), apóstrofes y guiónes<br>
+     f  Convertir los caracteres de vocales acentuadas a covales sin acento<br>
+     e.  Eliminar los guiones que se utilizan para dividir palabras (eliminando el guión) o para componer (dos palabras unidas por guión y se cambia por un espacio en blanco) conceptos
+     Eliminar palabras que tengan una longitud de caracteres menor a 3 o mayor a 26<br>
