@@ -57,5 +57,5 @@ Dado que la entrega anterior se quedo con el reto de reducir el Bag of Word, se 
 
 ### 2.1 Fase 1: Pre-procesamiento
 *Archivo: simple_conversion_pdf_tika.py*
-Para evitar la presencia de palabras con caracteres en blanco que las dividen, se realizó una conversión de los artículos en formato PDF a formato txt  utilizando una libería "Tika <a href="https://tika.apache.org/"_blank"></a>" 
+Para evitar la presencia de palabras con caracteres en blanco que las dividen, se realizó una conversión de los artículos en formato PDF a formato txt  utilizando una libería "Tika <a href="https://tika.apache.org/"></a>" 
 
