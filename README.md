@@ -51,5 +51,11 @@ El objetivo es eliminar de cada archivo de texto la mayor cantidad de informaci�
 6. Construcción del vocabulario.
 7. Construcción de Bag of Words.
 
-# 1. Segunda Entrega
-    
+# 2. Segunda Entrega
+## 2.1 Descripción de la Solución
+Dado que la entrega anterior se quedo con el reto de reducir el Bag of Word, se implementaron algunos ajustes a la fase de pre-procesamiento
+
+### 2.1 Fase 1: Pre-procesamiento
+*Archivo: simple_conversion_pdf_tika.py*
+Para evitar la presencia de palabras con caracteres en blanco que las dividen, se realizó una conversión de los artículos en formato PDF a formato txt  utilizando una libería "Tika <a href="https://tika.apache.org/"_blank"></a>" 
+
