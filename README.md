@@ -7,6 +7,7 @@ Los integrantes del equipo son:
 -  Juan David Jurado Tapias
 -  Alirio Rodriguez Mesías
 
+# Primera Entrega
 ## I. Descripción
 ### Introducción
 En este repositorio se encuentra disponibles los archivos con el código y la respectiva documentación que corresponde al Proyecto Integrador de la Maestría en Analítica y Ciencia de Datos de la cohorte 2019-1 en la  Universidad EAFIT.
@@ -19,11 +20,12 @@ Para implementar la solución se establecieron dos fases:
 
 ### Fase 1: Pre-procesamiento
 
-El objetivo es eliminar de cada archivo de texto la mayor cantidad de información que no agrega valor, depurando los datos que se preservan para la siguiente fase. La sección contiene los siguientes ordenados:
+El objetivo es eliminar de cada archivo de texto la mayor cantidad de información que no agrega valor, depurando los datos que se preservan para la siguiente fase. La sección contiene los siguientes archivos ordenados:
 
+*Archivo: preprocessing_data.ipynb*
 1. Importación de las librerías necesarias: numpy, re, os y collections. 
 2. Llamado de los datos input (datasetIn) y se genera una carpeta de outputs "salida" para guardar los datos de texto de menor dimensión (datasetout).
-3. Eliminación de la imformación innecesaria. Por ejemplo: textos en paréntesis, números, direcciones de páginas web y correos electronicos y las secciónes de bibliografía de los artículos.
+3. Eliminación de la información innecesaria. Por ejemplo: textos en paréntesis, números, direcciones de páginas web y correos electronicos y las secciónes de bibliografía de los artículos.
 4. Reconstrucción de los datos en formato .txt para su posterior tratamiento en procesamiento. 
 5. Guardado de los nuevos datos en la carpeta de salida.
 6. Reducción de la información se puede verificar en el archivo .xls generado. 
