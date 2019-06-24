@@ -102,3 +102,34 @@ Adicional a las tareas de procesamiento realizadas en la segunda entrega, se com
 
 # 3. Tercera Entrega
   
+## 3.1 Descripción del Problema
+A partir del análisis de los campos Título y Descripción de los metadatos de los artículos se deberán implementar dos esquemas de relacionamiento de los artículos una de clasificación (Modelo de Detección de Tópicos- LDA) y otra de agrupación (k-means), no supervisadas, para lo que se deberá utilizar SparkML (https://spark.apache.org/), realizando las tareas de limpieza, tokenización y reducción de la dimensionalidad.
+
+## 3.1 Descripción de la Solución
+Tal como se hizo para las primeras dos entredas, se establecera dos fases, tal como se describen a continuación:
+
+### 2.1.1 Fase 1: Pre-procesamiento
+En esta fase se implementaron las siguientes tareas:
+
+*Archivo: modelado_topicos_articulos_pyspark.ipynb*
+  * Se leyeron los datos de las columnas Título y Descripción del archivo de metadatos de los artículos y se combinaron un en nuevo campo, obteniendo 146.184 palabras. 
+  * Se realizó la limpieza de la información, eliminando guiones, caracteres que no sean letras, elimanando stopwords y palabras con  longitud menor a tres carácteres finalmente se realizó el stemming (utilizando la función de Porter Stemmer de la librería NLTK), obteniendo 84.576 palabras y 5483 palabras del vocabulario.
+ 
+ ### 2.1.2 Fase 2: Procesamiento
+ Sobre el mismo archivo se implementó:
+ 
+ *Archivo: modelado_topicos_articulos_pyspark.ipynb*
+  * Construcción de la matriz dispersa de documentos utilizando la función CountVectorizer de SparkML, en el que se incluyó el parámetro minDF=3, con el que se seleccionarían las palabras que cómo mínimo aparezcan en tres documentos, obteniendo 2252 palabras en el vocabulario de la matríz y logrando na reducción del 59% de la dimensionalidad de los elementos a ser procesados.
+  * Construcción del modelo de tópicos, definiendo como parámetros 20 categorías de Tópicos.
+  * Construcción del modelo de clustering, definiendo como parámetros K=20 grupos.
+  
+  *Archivo:clustertable_articles.csv*
+  Contiene el listado de los 980 artículos con el número del cluster asignado.
+  
+   *Archivo: ldaresults_articles.csv*
+  Contiene el listado de los 980 artículos con el número del topico asignado.
+  
+  *Archivo: TerceraEntrega.ipynb*
+  Dado que los resultados de la clusterización realizada con Pyspark no suministró una adecuada dispersión de los documentos entre las diferentes clusters, se programó nuevamente el algoritmo de clusterización utilizando la librería de Sklearn (https://scikit-learn.org/), que se combinaron con los tópicos asignados a cada artículo (ldaresults_articles.csv) y el resultado final se presentan un imágenes de nubes de palabras que están disponibles para consulta en el enlace:
+  https://app.powerbi.com/view?r=eyJrIjoiMTdjZTk1MWItNjkyMi00OGRjLWE1ZmQtNjcyYzdjODUyNjdlIiwidCI6IjU5YzM4MTgwLThlNmUtNDc2Zi1iNzk3LWZmNjA4NGU0MTkxZSIsImMiOjR9
+  
