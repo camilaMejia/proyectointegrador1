@@ -87,17 +87,17 @@ Para cada archivo de texto, se  estableció:
   Con estos datos se pudo calcular un indicador del porcentaje de limpieza de la fase de preprocesamiento, que en promedio es del 42%.
   
 ### 2.1.2 Fase 2: Procesamiento
-*Archivo: processing_data.ipynb*
+*Archivo: processing_data.ipynb*<br>
 Adicional a las tarea de procesamiento se complementaron con las siguientes taras:
   * Construcción del archivo cranfield.dat, que en cada registro continiene la información del texto de cada uno de los artículos convertidos con la librería Tika, archivo que se utilizará para la construcción de los indices invertidos utilizando la librería de Metapy.
   * Construcción del archivo "estructuraDatos.sav", que contiene la informacion del modelo entrenado contruido con la librería de Metapy.
   
-  *Archivo: cranfield.toml*
+  *Archivo: cranfield.toml*<br>
   Contiene los parámetros para que haciendo uso de Meta(https://meta-toolkit.org/) se pueda construir el archivo de los índices invertidos de los artículos, y que será utilizando como datos de referencia para probar el modelo de consulta o búsqueda.
   
-  *Archivo: Query.ipynb*
+  *Archivo: Query.ipynb*<br>
   * Carga los datos del modelo entrenado por Meta y almacenados en el archivo "estructuraDatos.sav".
-  * 
+  * Se ingresan la(s)palabra(s) de la consulta(query) que se utilizaría para establecer el ranquin de documentos que incluyen las palabras de la consulta.
   
 
 # 3. Tercera Entrega
