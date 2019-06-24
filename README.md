@@ -73,9 +73,12 @@ Con los archivos en formato TXT (resultado de la conversión con Tika) se aplica
      d. Eliminar abreviaciones("et al.", "i.i.e.","i.e"), apóstrofes y guiónes<br>
      f  Convertir los caracteres de vocales acentuadas a covales sin acento<br>
      e.  Eliminar los guiones que se utilizan para dividir palabras (eliminando el guión) o para componer (dos palabras unidas por guión y se cambia por un espacio en blanco) conceptos
-     Eliminar palabras que tengan una longitud de caracteres menor a 3 o mayor a 26<br>
+     g. Eliminar palabras que tengan una longitud de caracteres menor a 3 o mayor a 26<br>
 
-*Archivo:CleanSummary.csv*<br>
+*Archivo: BD_words_to_remove.csv*
+Contiene un archivo con
+
+*Archivo: CleanSummary.csv*<br>
 Para cada archivo de texto, se  estableció:
   a. Tamaño del archivo en KB
   b. El número de palabras al momento de iniciar el proceso, con el respectivo calculo de las palabras del vocabulario inicial
