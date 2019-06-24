@@ -38,8 +38,14 @@ Contiene:
 5. Guardado de los nuevos datos en la carpeta de salida.
 6. Reducción de la información se puede verificar en el archivo .xls generado. 
 
-Para cada archivo de texto, se  estableció el número de palabras antes y después del pre-procesamiento, y se estableció el porcentaje de depuración de palabras, lo que permitió generar un indicador del porcentaje de limpieza de la fase de preprocesamiento, que en promedio es del 19%.
-
+*Archivo:CleanSummary.csv*<br>
+Para cada archivo de texto, se  estableció:
+  a. Tamaño del archivo en KB
+  b. El número de palabras al momento de iniciar el proceso, con el respectivo calculo de las palabras del vocabulario inicial
+  c. Número de palabras depuradas o eliminadas.
+  d. Volcabulario obtenido como resultado de la limpieza.
+  Con estos datos se pudo calcular un indicador del porcentaje de limpieza de la fase de preprocesamiento, que en promedio es del 19%.
+  
 ### 1.3.2 Fase 2: Procesamiento
 El objetivo es eliminar de cada archivo de texto la mayor cantidad de información que no agrega valor, depurando los datos que se preservan para la siguiente fase.   Para esto se implementaron las siguientes reglas de limpieza:
 *Archivo: processing_data.ipynb*
@@ -68,3 +74,15 @@ Con los archivos en formato TXT (resultado de la conversión con Tika) se aplica
      f  Convertir los caracteres de vocales acentuadas a covales sin acento<br>
      e.  Eliminar los guiones que se utilizan para dividir palabras (eliminando el guión) o para componer (dos palabras unidas por guión y se cambia por un espacio en blanco) conceptos
      Eliminar palabras que tengan una longitud de caracteres menor a 3 o mayor a 26<br>
+
+*Archivo:CleanSummary.csv*<br>
+Para cada archivo de texto, se  estableció:
+  a. Tamaño del archivo en KB
+  b. El número de palabras al momento de iniciar el proceso, con el respectivo calculo de las palabras del vocabulario inicial
+  c. Número de palabras depuradas o eliminadas.
+  d. Volcabulario obtenido como resultado de la limpieza.
+  Con estos datos se pudo calcular un indicador del porcentaje de limpieza de la fase de preprocesamiento, que en promedio es del 42%.
+  
+  
+  # 3. Tercera Entrega
+  
