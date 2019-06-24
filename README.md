@@ -56,10 +56,10 @@ El objetivo es eliminar de cada archivo de texto la mayor cantidad de informaci�
 Dado que la entrega anterior se quedo con el reto de reducir el BoW, se implementaron algunos ajustes a la fase de pre-procesamiento
 
 ### 2.1 Fase 1: Pre-procesamiento
-*Archivo: simple_conversion_pdf_tika.py*
+*Archivo: simple_conversion_pdf_tika.py*<br>
 Para evitar la presencia de caracteres en blanco en medio de palabras, se realizó una conversión de los artículos en formato PDF a formato txt utilizando una libería "Tika (https://tika.apache.org/)", logrando una evitar la pérdida de información.
 
-*Archivo: cleaning_txt.py*
+*Archivo: cleaning_txt.py* <br>
 Con los archivos en formato TXT (resultado de la conversión con Tika) se aplica las siguientes reglas:
      a. Eliminar el texto de las referencias bibliográficas, dado que no agrega información en la construcción del BoW.
      b. Eliminar URL o email.<br>
